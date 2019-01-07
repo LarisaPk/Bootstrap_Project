@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ 
+<title>Larisa's adventures</title>
+ 
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="color.css" rel="stylesheet" type="text/css"/>
+     
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ </head>
+    
+ <body>
+<div class="container">
+<div class="row">
+<div class="col-md-12"><h1>Questionnaire</h1></div>
+</div> 
+
+ <nav class="navbar navbar-inverse"> 
+     <div class="container-fluid">
+             <div class="navbar-header"> 
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+               <span class="sr-only">Toggle navigation</span>  
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button> 
+                 <a class="navbar-brand" href="Index.html">Larisa's adventure</a>   
+             </div>
+         <div role="navigation" id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height:1px;">
+           <ul class="nav navbar-nav">
+            <li ><a href="Index.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+            <li><a href="second.html"><span class="glyphicon glyphicon-pushpin"></span> Alicante</a></li>
+            <li><a href="third.html"><span class="glyphicon glyphicon-pushpin"></span> Barcelona</a></li>
+            <li class="active"><a href="Fourth.html"><span class="glyphicon glyphicon-pencil"></span>
+                Questionnaire</a></li>
+           </ul>
+         </div>
+     </div>
+</nav>
+<div class="row">
+    <div class="col-md-6">
+    <h2>Tell me about your travelling experience</h2>
+        <p>Travelling is my hobby, and I would like to know also other people's opinions and preferenses. It is very inmortanf for me. Please, fill the form and tell me more about your adventures. It would be also interesting to get some tips or if thete are "hidden gems" that everybody must see, write me where I can find them. It will help me to get inspiration for my next trips! And thank you again for visiting my page. </p>
+    </div>
+    
+    
+    <div class="col-md-6">
+        <form>
+            <fieldset>
+                <legend>Personal information:</legend>
+            First Name: <br><input type="text" name="firstname"><br>
+            Last Name: <br><input type="text" name="lastname"><br>
+            Gender: <br><input type="radio" name="gender" value="male" checked> Male
+                    <input type="radio" name="gender" value="female"> Female
+                     <input type="radio" name="gender" value="other"> Other<br>
+            Where are you from? <br><textarea  name="country" rows="1"></textarea><br>
+                 </fieldset>
+                <fieldset>
+                <legend>Travelling experience:</legend>
+                    Select your favorite transport:<br>
+                    <select name="transport" size="2" multiple>
+                        <option value="car">Car</option>
+                        <option value="train">Train</option>
+                        <option value="airplain">Airplain</option>
+                        <option value="ship">Ship</option>
+                      </select><br>
+                    Other:<br><textarea  name="othertransport" rows="1" ></textarea><br>
+                   Where was the last place you travelled to? <br><textarea name="lasttravel" rows="1" >
+                   </textarea><br>
+                    What was good?<br> <textarea name="good" rows="3">
+                   </textarea><br>
+                    What was bad?<br> <textarea name="bad" rows="3">
+                   </textarea><br>
+                    Tips and recomendations:<br> <textarea name="tips" rows="3">
+                   </textarea><br>
+               </fieldset>
+            <fieldset>
+                <legend>How did you like my webpage?</legend>
+                <label for="mypage">Choose a number between 1(did not like) and 5(liked it very much)</label><br>
+             Raiting (1 - 5) <input type="range" name="mypage" id="mypage" min="1" max="5"> 
+            </fieldset>
+            
+            <input type="submit" value="Submit"> <input type="reset" value="Reset"> 
+                
+            
+        </form>
+    </div>
+</div>
+
+
+
+<div class="row">
+<div id="footer" class="col-md-12">Copyright 2017 by Larisa Pyyk&ouml;l&auml;</div>
+</div>
+</div>
+
+<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+ <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+</body>
+</html> 

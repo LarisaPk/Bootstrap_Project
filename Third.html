@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ 
+<title>Larisa's adventures</title>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">  
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="color.css" rel="stylesheet" type="text/css"/>
+   
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ </head>
+ <body>
+
+<div class="container">
+
+<div class="row">
+<div class="col-md-12">
+<h1>Barcelona</h1></div>
+</div> 
+
+ <nav class="navbar navbar-inverse"> 
+     <div class="container-fluid">
+             <div class="navbar-header"> 
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+               <span class="sr-only">Toggle navigation</span>  
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button> 
+                 <a class="navbar-brand" href="Index.html">Larisa's adventure</a>   
+             </div>
+         <div role="navigation" id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height:1px;">
+           <ul class="nav navbar-nav">
+            <li ><a href="Index.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+            <li><a href="second.html"><span class="glyphicon glyphicon-pushpin"></span> Alicante</a></li>
+            <li class="active"><a href="third.html"><span class="glyphicon glyphicon-pushpin"></span> Barcelona</a></li>
+            <li><a href="Fourth.html"><span class="glyphicon glyphicon-pencil"></span>
+                Questionnaire</a></li>
+           </ul>
+         </div>
+     </div>
+</nav>
+
+<div class="row">
+<div class="col-md-12">
+
+    <h2>Some pictures from our Barcelona trip</h2>
+
+  <div class="w3-content w3-display-container" style="max-width:800px">
+  <img class="mySlides" src="images/barcelona2.jpg" style="width:100%" alt="Montserrat Monastery view">
+  <img class="mySlides" src="images/barcelona3.jpg" style="width:100%" alt="Food">
+  <img class="mySlides" src="images/barcelona4.jpg" style="width:100%" alt="Sagrada Família windows">
+  <img class="mySlides" src="images/barcelona5.jpg" style="width:100%" alt=" Labyrinth Park of Horta in Barcelona">
+   <img class="mySlides" src="images/barcelona6.jpg" style="width:100%" alt="Picture of me">
+   <img class="mySlides" src="images/barcelona7.jpg" style="width:100%" alt=" Picture of me and my husband">
+   <img class="mySlides" src="images/barcelona8.jpg" style="width:100%" alt=" View from the Montjuic Castle">
+  <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+      <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
+      <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(5)"></span>
+      <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(6)"></span>
+      <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(7)"></span>
+ </div>
+  </div>
+    
+</div>
+
+
+<div class="col-md-12">
+    
+<p>Barcelona is a very beautiful and big city. We brought from there a lot of pictures and some of them I put here. Hope you like them! </p>
+</div>
+</div> 
+<div class="row">
+<div id="footer" class="col-md-12">Copyright 2017 by Larisa Pyyk&ouml;l&auml;</div>
+</div>
+</div>
+     
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+ <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+</body>
+</html> 
